@@ -1,0 +1,302 @@
+/* demo演示的那个 当viewpoint小于一定程度 图片插入两端文字 这个我没弄出来 */
+/* 我给很多tag加了背景 方便debug */
+body {
+    margin: 0%;
+}
+
+.header {
+    padding: 40px;
+    text-align: left;
+    background: black;
+    font-size: large;
+    color: white;
+    font-size: 30px;
+}
+
+.content
+{
+    margin: 5%;
+}
+
+/*  sub title  */
+h2{
+    width:50;
+    font-size:55px;
+    font-weight: bolder;
+}
+
+/* leading text */
+h3{
+    /* margin-top: 10%; */
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* sub text for 2 boxes -- activities and plans */
+h4{
+    margin-top: 5%;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: start;
+}
+
+/* shape for the activity and plan */
+.shape {
+    height: 300px;
+    width: 100%;
+    background-color: #53E0CD;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    float: left;
+    margin-right: 20px;
+}
+
+.shape2 {
+    height: 300px;
+    width: 100%;
+    background-color:#B1BAB9;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    float: left;
+    margin-right: 20px;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+#button1{
+    height: 50px;
+    width: 20%;
+    background-color: #FFF;
+    border-radius: 30px;
+
+    margin-top: 125px;
+    margin-bottom: 125px;
+    float: center;
+    margin-left: 40%;
+
+    color: #333333;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+#button3{
+    height: 50px;
+    width: 20%;
+    background-color:#333333;
+    border-radius: 30px;
+
+    margin-top: 125px;
+    margin-bottom: 125px;
+    float: center;
+    margin-left: 40%;
+
+    color:lawngreen;;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+/* main button */
+.button{
+
+
+    height: 50px;
+    width: 20%;
+    background-color: #FFF;
+    border-radius: 30px;
+
+    margin-top: 125px;
+    margin-bottom: 125px;
+    float: center;
+    margin-left: 40%;
+
+    color: #333333;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#button2{
+    /*height: 50px;*/
+    /*width: 20%;*/
+    padding: 5px 20px;
+    background-color:#333333;
+    border-radius: 30px;
+
+    /*margin-top: 125px;*/
+    /*margin-bottom: 125px;*/
+    /*float: center;*/
+    /*margin-left: 40%;*/
+
+    color:lawngreen;;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.button3{
+    height: 50px;
+    width: 20%;
+    background-color:#333333;
+    border-radius: 30px;
+
+    margin-top: 125px;
+    margin-bottom: 125px;
+    float: center;
+    margin-left: 40%;
+
+    color:lawngreen;;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.button1{
+    height: 50px;
+    width: 20%;
+    background-color:#333333;
+    border-radius: 30px;
+
+    margin-top: 125px;
+    margin-bottom: 125px;
+    float: center;
+    margin-left: 40%;
+
+    color:slateblue;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#button4
+{
+
+    background-color:#333333;
+    border-radius: 30px;
+
+    margin-left: 10mm;
+    margin-top: 9mm;
+    width: 3cm;
+    height: 1cm;
+
+    /* margin-top: 125px;
+    margin-bottom: 125px; */
+    /* float: center; */
+    /* margin-left: 40%; */
+
+    color:red;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.mainclass {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* font-family: Sans-Serif;
+    font-size: 75%; */
+}
+
+
+
+/* sub wrapper */
+.subWrapper{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: flex-end;*/
+    /* align-items: left; */
+    padding: 20px;
+
+}
+.subWrapper1{
+    display: flex;
+    /* flex-direction: r; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: flex-end; */
+    /* align-items: left; */
+
+}
+
+
+form{
+    margin-top: 5%;
+    margin-left: 2mm;
+    align-items: center;
+}
+
+.paragraph{
+    margin-top: 1cm;
+    /* margin-bottom: 120px; */
+    float: center;
+    text-align: center;
+    /* margin-left: 15%; */
+}
+
+/* cited from https://stackoverflow.com/questions/52840843/show-text-on-click-of-a-button */
+.show{
+    visibility:hidden;
+}
+
+.hide{
+    visibility: visible;
+}
+
+
+
+.totalwrap
+{
+
+ 
+    /* padding-left: 30%; */
+    width:100%;
+    height:600px;
+    margin:0mm;
+    margin-bottom: 5%;
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.headpic
+{
+    width: 430px;
+    /*max-height:80%;*/
+    float:right;
+    margin-top: -20px;
+}
+
+.headpic img
+{
+    /*padding-top: 20pt;*/
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.headtext1
+{
+    /* width:50%; */
+    /*height:300px;*/
+    /* background-color:blue; */
+    float:left;
+    /*align-self:center;*/
+    /*text-align: center;*/
+}
+

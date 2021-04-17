@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Fitness tracker stage 1</title>
+	<link href="reset.css" rel="stylesheet" type="text/css" />
+	<link href="examples.css" rel="stylesheet" type="text/css" />
+	<link href="send.php" rel="stylesheet" type="text/php" />
+  <script defer src="examples.js"></script>
+</head>
+
+<BODY>
+	<div class="header">
+		<h1>Fitness Log</h1>
+	</div>
+
+	<div class="content">
+		<div class="totalwrap">
+			<div class="imagewarp">
+
+				<span class="headtext1" >
+					<h2 style="display: inline-block">
+					Welcome Back, <br>Molly!    <!-- revised your code using <br> in case future confusion :) -->
+					</h2>
+				</span>
+				<span class="headpic">
+					<img src="Fitness-Log-Designs/header image.png">
+				</span>
+                
+			</div>
+			<h3 style="float: left;">
+				What activity session are you logging?
+			</h3>
+
+		</div>
+
+
+		<h4>
+			Past Activity
+		</h4>
+		<div class="shape">
+			<span>
+				<p class="paragraph" id="summary"></p>
+			</span>
+			<button id="button1">
+				Add New Activity
+			</button>
+			<div id="mainContent" class="show">
+				<div class="mainclass">
+					<div class="subWrapper">
+						<form  id="form" action="file:///Users/mollyhuang/Downloads/updated1.2%202/public/examples.html" ><!--action="/action_page.php"-->
+							<div style="display: inline-block">
+                                <label for="date1">Date <br>
+                                    <input type="date" id="date1" name="date" />
+                                </label>
+                            </div>
+                            <div style="display: inline-block">
+                                <label for="Activity1">Activity<br>
+                                    <select name="Activity" id="Activity1" onchange="changeUnits()">
+                                    <option value="Walk">Walk</option>
+                                    <option value="Run">Run</option>
+                                    <option value="Swim">Swim</option>
+                                    <option value="Bike">Bike</option>
+                                    <option value="Yoga">Yoga</option>
+                                    <option value="Soccer">Soccer</option>
+                                    <option value="Basketball">Basketball</option>
+                                </select></label>
+                            </div>
+                            <label>for</label>
+                            <div style="display: inline-block">
+                                <label for="time_distance">  Time/Distance<br> </label>
+                                <!--<select name="time_distance" id="time_distance">-->
+                                    <input id="time_distance" type="number" step="1" min="1" max="1000000"/>
+                                <!--</select>-->
+                            </div>
+                            <div style="display: inline-block">
+                                <label for="Units">Units<br> </label>
+                                <select name="Units" id="Units" disabled >
+                                    <option value="Km">Km</option>
+                                    <option value="minutues">minutues</option>
+                                </select>
+                            </div>
+
+                            <button id="button2" >
+                                Submit
+                            </button>
+					
+							<!-- <input type="submit"> -->
+						</form>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- 这个方程的button var一个名字对应着一个button 同名就会出bug -->
+
+		<!-- second one -->
+		<h4>
+			Future Plans
+		</h4>
+		<div class="shape2">
+			<p class="paragraph" id="result"></p>
+			<button id="button3">
+				Add New Activity
+			</button>
+			<div id="mainContent2" class="show">
+				<div class="mainclass">
+					<div class="subWrapper1">
+
+
+						<form action="file:///Users/mollyhuang/Downloads/updated1.2%202/public/examples.html">
+							<div style="display: inline-block">
+                                <label for="date2">Date <br>
+                                    <input type="date" id="date2" name="date" />
+                                </label>
+                            </div>
+							<!-- <label for="Date">Date <br></label>
+							<input type="date" id="date" name="date"> -->
+							<!-- <input type="submit"> -->
+						</form>
+
+						<form action="file:///Users/mollyhuang/Downloads/updated1.2%202/public/examples.html">
+							<label for="Activity2">Activity<br></label>
+							<select name="Activity" id="Activity2">
+							  <option value="Walk">Walk</option>
+							  <option value="Run">Run</option>
+							  <option value="Swim">Swim</option>
+							  <option value="Bike">Bike</option>
+							  <option value="Yoga">Yoga</option>
+							  <option value="Soccer">Soccer</option>
+							  <option value="Basketball">Basketball</option>
+							</select>
+							<!-- <br><br>
+							<input type="submit" value="Submit"> -->
+						</form>
+
+
+						<!-- <button class="button4" onclick="unhide4()">
+							Submit1
+						</button> -->
+						<!-- <a href="file:///Users/mollyhuang/Downloads/updated1.2%202/public/examples.html"> -->
+						<button id="button4">
+							Submit
+						</button>
+						<!-- </a> -->
+						<!-- <div>
+							<p id="result"></p>
+						</div> -->
+						<!-- <p id="result" onclick="secone()">hh</p> -->
+						<!-- <div id="result"></div> -->
+						<!-- <p><input type="button" value="Display" onclick="secone();" /></p> -->
+
+						
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</BODY>
+</html>
